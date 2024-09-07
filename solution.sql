@@ -65,7 +65,7 @@ Select
 	Product_ID,
 	Region,
 	profit,
- 	RANK() OVER (PARTITION BY Region ORDER BY profit DESC) AS Rank_Profit
+ 	RANK() OVER (ORDER BY profit DESC) AS Rank_Profit
 From
 	Profit_Calculation
 
